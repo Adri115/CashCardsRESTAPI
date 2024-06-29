@@ -59,6 +59,15 @@ public class Student {
 	public void setBranch(String branch) {
 		this.branch = branch;
 	}
+	public void setAll(Student student) {
+		  if (student.getName() != null) {
+		        this.name = student.getName();
+		    }
+		    if (student.getBranch() != null) {
+		        this.branch = student.getBranch();
+		    }
+		    //this.percentage = student.getPercentage(); Should change from primitve float to Float class
+	      }
 	
 	@Override
 	public String toString() {
